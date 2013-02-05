@@ -1,0 +1,30 @@
+input,
+input[type="search"],
+textarea {
+    border: solid 1px @gray;
+    padding:4px;
+    .box-sizing();
+}
+
+input,
+input[type="search"] {
+    &:focus {
+        outline:none;
+        border-color:@black;
+        .box-shadow(0 0 3px @gray);
+    }
+}
+
+input[type="search"] {
+    .rounded(13px);
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
