@@ -884,7 +884,7 @@ textarea {
 }
 body {
   font: 13px/1.4 Arial, Helvetica, sans-serif;
-  background: #f5f3f0;
+  background: #cdbda9 url('../images/page-bg.png') repeat-x 0 0;
 }
 ::-moz-selection {
   background: #b3d4fc;
@@ -1164,6 +1164,11 @@ footer {
   padding: 20px 0;
   border-top: solid 1px #999;
   background: #ffffff url('../images/nav-shadow.png') repeat-x 0 0;
+}
+.after-footer {
+  display: block;
+  height: 148px;
+  background: url('../images/footer-pattern.gif') repeat 0 0;
 }
 footer p {
   margin-top: 0;
