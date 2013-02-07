@@ -976,6 +976,7 @@ img {
   list-style: none;
   border-bottom: 1px solid #999999;
   padding: 8px 10px;
+  font-size: 11px;
 }
 .breadcrumbs li {
   display: inline-block;
