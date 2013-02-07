@@ -1046,12 +1046,44 @@ header .brand {
   background: url('../images/logo.jpg') no-repeat 0 0;
   width: 152px;
   height: 77px;
+  float: left;
 }
 header .brand:before {
   content: "";
   display: block;
   width: 0;
   height: 150%;
+}
+.header-promo {
+  font-size: 12px;
+  color: #666;
+  margin-top: 40px;
+}
+.header-promo i {
+  float: left;
+  margin-right: 10px;
+  width: 33px;
+  height: 31px;
+  background: url('../images/header-icons.gif') no-repeat 0 0;
+}
+.header-promo .title {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+}
+.cart {
+  text-align: right;
+  color: #336699;
+  margin-top: 20px;
+}
+.cart i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 22px;
+  margin-right: 7px;
+  margin-top: -7px;
+  background: url('../images/header-icons.gif') no-repeat -5px -33px;
 }
 nav {
   zoom: 1;
@@ -1116,6 +1148,27 @@ footer {
   padding: 20px 0;
   border-top: solid 1px #999;
   background: #ffffff url('../images/nav-shadow.png') repeat-x 0 0;
+}
+footer p {
+  margin-top: 0;
+}
+.accepts {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+
+  *text-indent: -9999px;
+  display: block;
+  background: url('../images/accepts-icons.gif') no-repeat 0 0;
+  width: 211px;
+  height: 32px;
+}
+.accepts:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
 }
 input,
 input[type="search"],
@@ -1211,10 +1264,12 @@ textarea {
 .invisible {
   visibility: hidden;
 }
-.left {
+.left,
+.pull-left {
   float: left;
 }
-.right {
+.right,
+.pull-right {
   float: right;
 }
 .clearfix {
