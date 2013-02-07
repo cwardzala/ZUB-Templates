@@ -1120,6 +1120,7 @@ nav ul li a {
   float: left;
   padding: 8px 16px;
   color: #333333;
+  font-size: 18px;
 }
 nav ul li a:hover {
   color: #333333;
@@ -1129,6 +1130,21 @@ nav ul li:first-child a {
 }
 nav ul li.active a {
   background: #ece5dc;
+}
+nav .phone {
+  float: right;
+}
+nav .phone a {
+  padding: 7px 10px;
+  color: #666;
+}
+nav .phone i {
+  width: 16px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  background: url('../images/header-icons.gif') no-repeat 0 -57px;
 }
 .search-bar-inner {
   background: #627d62;
@@ -1179,6 +1195,10 @@ textarea {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 input:focus,
 input[type="search"]:focus {
@@ -1216,6 +1236,18 @@ textarea {
   box-shadow: 0 2px 0 #354e35;
   padding: 6px 12px;
   border-radius: 10px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.btn:hover {
+  color: #ffffff;
+}
+.btn:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .btn-link {
   background: none;
