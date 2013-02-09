@@ -170,7 +170,7 @@ img{vertical-align:middle;}
 .ul_horiz{margin:0;padding:0;list-style:none;text-align:center;}
 .ul_horiz li{display:inline-block;}
 .ul_horiz li:after{content:"|";display:inline-block;padding:0 10px;}
-.ul_horiz li:last-child:after{content:"";display:none;}
+.ul_horiz li:last-child:after,.ul_horiz .last:after{content:"";display:none;}
 .main_wrapper{background:#ffffff;}
 .sidebar ul{margin:0;padding:0;list-style:none;margin-bottom:21px;}.sidebar ul:last-of-type{margin-bottom:0;}
 .sidebar li{color:#627d62;margin-bottom:5px;}
