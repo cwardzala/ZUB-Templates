@@ -1,0 +1,26 @@
+.jumbotron {
+    margin-left:-@gridGutterWidth / 2;
+}
+
+.jumbotron .indicators {
+    .clearfix;
+    text-align:center;
+    width:110px;
+    margin:12px auto 0;
+}
+.jumbotron .indicator {
+    display:block;
+    float:left;
+    width:8px;
+    height:8px;
+    border-radius:7px;
+    margin:0 @gridGutterWidth / 2;
+    border:solid 3px @gray;
+    background:@gray;
+    .transition();
+
+    &.active, &:hover {
+        cursor:pointer;
+        border-color:@grayDark;
+    }
+}
