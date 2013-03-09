@@ -1,0 +1,39 @@
+.article {
+    padding:15px;
+    border-top:solid 1px @gray;
+    border-bottom:solid 1px @gray;
+    margin-top:@gridGutterWidth * 2;
+}
+.article .header {
+    margin-bottom: @gridGutterWidth * 2;
+}
+.article .header h2 {
+    margin-bottom:10px;
+}
+
+.article-sidebar {
+    padding-top:107px;
+    padding-left:50px;
+    font-size:12px;
+}
+
+.article-sidebar h4 {
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:@black;
+    margin-bottom:@gridGutterWidth - 3;
+}
+
+.article-sidebar ul {
+    .ul_unstyled();
+
+    li {
+        margin-bottom:@gridGutterWidth - 3;
+    }
+}
+
+.article-sidebar dd {
+    padding:0;
+    margin:0 0 (@gridGutterWidth * 2) - 3;
+}
