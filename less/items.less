@@ -1,4 +1,5 @@
 .item {
+    padding-bottom:30px;
     img {
         border:solid 2px @gray;
         width:97px;
@@ -14,4 +15,98 @@
 .items_grid {
     margin-left:-10px;
     margin-right:-10px;
+}
+
+.items_list {
+    .clearfix;
+    float:none;
+    display:block;
+    margin-top:@gridGutterWidth;
+    margin-bottom:80px;
+}
+
+.item_large {
+    .clearfix;
+    color:#666;
+    border-bottom:solid 1px @gray;
+    padding-bottom:13px;
+}
+
+.item_detail {
+    .clearfix;
+    float:none;
+    padding-bottom:0;
+    margin-bottom:0;
+    &:after {
+        content: url(../images/pd-divider.jpg);
+        height:28px;
+        display:block;
+    }
+    .item {
+        border-bottom:none;
+    }
+}
+
+.item_more {
+    width:606px;
+    margin-left:15px;
+    p {
+        margin-bottom:25px;
+    }
+    .page-header {
+        padding-top:0;
+    }
+}
+
+.item_image {
+    margin-right:@gridGutterWidth;
+    float:left;
+    text-align: center;
+
+
+    img {
+        display:block;
+    }
+}
+
+.item_info {
+    float:left;
+    width:420px;
+    font-size:12px;
+    p {
+        margin-bottom:18px;
+    }
+
+    .title {
+        font-size:18px;
+        margin-bottom:12px;
+        text-decoration: underline;
+    }
+    .author {
+        color:@blue;
+
+        text-decoration: underline;
+    }
+
+    .description {
+
+    }
+}
+
+.item_actions {
+    width:150px;
+    float:left;
+
+    p {
+        margin-bottom:@gridGutterWidth;
+        padding-left:10px;
+    }
+    .btn {
+        margin-left:-10px;
+    }
+
+    .price {
+        font-size:14px;
+        color:@black;
+    }
 }
