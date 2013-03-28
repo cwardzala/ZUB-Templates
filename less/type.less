@@ -17,6 +17,11 @@ h3 {
     margin-bottom:ceil(20px / 1.4);
 }
 
+h4 {
+    font-size:18px;
+    margin-bottom: ceil(18px / 1.4);
+}
+
 p {
   margin: 0 0 @gridGutterWidth / 2;
 }
@@ -57,4 +62,10 @@ a:hover {
 
 .link_alt:hover {
     color:darken(#666,10%);
+}
+
+.link_cta:before {
+    content:">> ";
+    display:inline-block;
+    margin-right:2px;
 }
