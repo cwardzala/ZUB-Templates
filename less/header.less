@@ -54,16 +54,16 @@ nav {
     font-family:@altFont;
     background:@white;
 
-
-
-    ul {
+    > ul {
         border-bottom:solid 1px #999;
         .clearfix;
         list-style:none;
         margin:0;
         padding:0;
     }
-    ul li {
+    > ul li {
+        float:left;
+        position:relative;
         a {
             float:left;
             padding:8px 16px;
@@ -79,9 +79,14 @@ nav {
             padding-left:10px;
         }
     }
-    ul li.active a {
+    > ul li.active a, > ul li:hover a {
+        .transition();
         background:@tan;
     }
+    > ul li:hover .dropdown-menu {
+        display:block;
+    }
+
 
     .phone {
         .pull-right;
@@ -91,6 +96,7 @@ nav {
             color:#666;
         }
     }
+
     .phone i {
         width:16px;
         height:24px;
@@ -99,6 +105,33 @@ nav {
         margin-right:10px;
         background:url('../images/header-icons.gif') no-repeat 0 -57px;
     }
+
+    .dropdown-menu {
+        display:none;
+        position:absolute;
+        padding:0 @gridGutterWidth / 2 8px;
+        background:@tan;
+        top:100%;
+        min-width:100%;
+        .box-sizing(border-box);
+
+        ul {
+            border-bottom:none;
+            .clearfix;
+            list-style:none;
+            margin:0;
+            padding:0;
+
+        }
+        ul li {
+            float:none;
+        }
+        li a {
+            padding:5px ;
+            font-size:14px;
+        }
+    }
+
 }
 
 .search-bar-inner {

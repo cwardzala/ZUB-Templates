@@ -1145,7 +1145,7 @@ nav:after {
 nav:after {
   clear: both;
 }
-nav ul {
+nav > ul {
   border-bottom: solid 1px #999;
   zoom: 1;
   *zoom: 1;
@@ -1153,28 +1153,40 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-nav ul:before,
-nav ul:after {
+nav > ul:before,
+nav > ul:after {
   content: " ";
   display: table;
 }
-nav ul:after {
+nav > ul:after {
   clear: both;
 }
-nav ul li a {
+nav > ul li {
+  float: left;
+  position: relative;
+}
+nav > ul li a {
   float: left;
   padding: 8px 16px;
   color: #333333;
   font-size: 18px;
 }
-nav ul li a:hover {
+nav > ul li a:hover {
   color: #333333;
 }
-nav ul li:first-child a {
+nav > ul li:first-child a {
   padding-left: 10px;
 }
-nav ul li.active a {
+nav > ul li.active a,
+nav > ul li:hover a {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   background: #ece5dc;
+}
+nav > ul li:hover .dropdown-menu {
+  display: block;
 }
 nav .phone {
   float: right;
@@ -1190,6 +1202,41 @@ nav .phone i {
   vertical-align: middle;
   margin-right: 10px;
   background: url('../images/header-icons.gif') no-repeat 0 -57px;
+}
+nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  padding: 0 10px 8px;
+  background: #ece5dc;
+  top: 100%;
+  min-width: 100%;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+nav .dropdown-menu ul {
+  border-bottom: none;
+  zoom: 1;
+  *zoom: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav .dropdown-menu ul:before,
+nav .dropdown-menu ul:after {
+  content: " ";
+  display: table;
+}
+nav .dropdown-menu ul:after {
+  clear: both;
+}
+nav .dropdown-menu ul li {
+  float: none;
+}
+nav .dropdown-menu li a {
+  padding: 5px ;
+  font-size: 14px;
 }
 .search-bar-inner {
   background: #627d62;
